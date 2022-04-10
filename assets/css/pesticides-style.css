@@ -1,0 +1,83 @@
+/* -------------------------------------
+    ( 14 ) Start pesticides-products Section
+* ------------------------------------- */
+#pesticides-products .controls {margin-bottom: 40px;}
+#pesticides-products .controls button {margin: 0 5px;}
+#pesticides-products .project {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+#pesticides-products .project .project-img-wrapper {
+	-webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+}
+#pesticides-products .project:hover .project-img-wrapper {
+	-webkit-transform: scale(1.1) rotate(5deg);
+	    -ms-transform: scale(1.1) rotate(5deg);
+	        transform: scale(1.1) rotate(5deg);
+	-webkit-transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+			transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);    
+}
+#pesticides-products .project .img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	background: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.5s ease-in-out;
+    		transition: all 0.5s ease-in-out;
+}
+#pesticides-products .project:hover .img-overlay {opacity: 0;	visibility: visible;}
+#pesticides-products .project .overlay-text {
+	position: absolute;
+	left: 130px;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	bottom: -60px;
+	opacity: 0;
+	-webkit-transition: all 0.5s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    		transition: all 0.5s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+#pesticides-products .project:hover .overlay-text {bottom: 30px;	opacity: 1;}
+#pesticides-products .project .overlay-text h4 {
+	color: rgb(0, 0, 0); 
+	margin-bottom: 5px; 
+	letter-spacing: 2px;
+}
+#pesticides-products .project .overlay-text p {
+	color: rgb(0, 0, 0);
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#pesticides-products .modal-header h4 {line-height: 38px;}
+#pesticides-products .modal-header button.close {
+    text-align: left;
+	border: 1px solid #555;
+    padding: 5px;
+    margin: 2px;
+	/* width: 40px;
+	height: 40px; */
+	-webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    		transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+#pesticides-products .modal-body img { margin-bottom: 20px; }
+#pesticides-products .modal-body h4, #pesticides-products .modal-body p {text-align: left;}
+#pesticides-products .modal-body p.project-description {margin-top: 20px;}
+#pesticides-products .modal-body p.subtitle {
+	color: #555;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+#pesticides-products .modal-body a {margin: 10px;}
+#pesticides-products .interested {margin-top: 40px; margin-bottom: 40px;}
+#pesticides-products .interested a {margin-top: 20px;}
+
+/* End pesticides-products Section */
